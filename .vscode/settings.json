@@ -1,0 +1,18 @@
+{
+  "files.associations": {
+    "*.wxml": "wxml",
+    "*.wxss": "css",
+    "*.wxs": "js"
+  },
+  "files.eol": "\n", // 文件换行符默认lf
+  "editor.formatOnSave": true, // 保存文件自动格式化
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 设置编辑默认的格式化工具为prettier
+  "editor.wordWrap": "wordWrapColumn", // 设置编辑器根据设置的列宽换行，有利于prettier忽略的
+  "editor.wordWrapColumn": 120, // 设置编辑器最大列为120
+  "editor.rulers": [120], // 在编辑器中120列处显示标尺线
+  "minapp-vscode.wxmlFormatter": "prettier", // 设置扩展程序minapp格式化使用prettier
+  "minapp-vscode.formatMaxLineCharacters": 120,
+  "[wxml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
