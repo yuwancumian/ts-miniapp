@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "strictNullChecks": true,
     "noImplicitAny": false,
     "module": "CommonJS",
@@ -17,10 +18,17 @@
     "strict": true,
     "removeComments": true,
     "pretty": true,
+    "noEmitOnError": true,
+    "noEmit": false,
     "strictPropertyInitialization": true,
-    "lib": ["es5"],
-    "typeRoots": ["./typings"]
+    "lib": ["es5", "ES2015", "DOM"],
+    "typeRoots": ["./typings"],
+    "types": ["miniprogram-api-typings"],
+    "skipLibCheck": true,
+    "paths": {
+      "@vant/weapp/*": ["src/node_modules/@vant/weapp/dist/*"]
+    }
   },
   "include": ["./**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "**/*.d.ts"]
 }
